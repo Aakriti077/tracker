@@ -1,0 +1,22 @@
+ it open icome.php or expense.php when clicked.
+<main>
+    <?php
+    // Check if a page is selected, otherwise default to dashboard
+    $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+
+    // Include the selected page
+    switch ($page) {
+        case 'income':
+            include 'income.php';
+            break;
+        case 'expenses':
+            include 'expenses.php';
+            break;
+        default:
+            // Load default dashboard content here
+            // For example, you might include a default dashboard.php
+            include 'dashboard.php';
+            break;
+    }
+    ?>
+</main>

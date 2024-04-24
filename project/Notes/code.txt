@@ -1,0 +1,148 @@
+for signup
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../dash/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Signup</div>
+        <form action="" class="form">
+            <input required="" class="input" type="text" name="name" id="name" placeholder="Full Name">
+            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+            <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+            <input required="" class="input" type="password" name="re-password" id="re-password" placeholder="Re-enter Password">
+            <input class="signup-button" type="submit" value="Sign Up">
+        </form>
+        <div class="social-account-container">
+    
+        </div>
+        <div class="register-link">
+        <p>Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #452c63;
+}
+
+.container {
+    max-width: 350px;
+    background: rgb(251, 246, 255);
+    /* background: linear-gradient(100deg, rgb(251, 246, 255) 0%, rgb(244, 247, 251) 100%); */
+    border-radius: 40px;
+    padding: 27px 35px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: #e6d9ff 0px 18px 18px -15px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: none;
+}
+
+.heading {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #8847d7;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form .input {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #e6d9ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    transition: box-shadow 0.3s ease;
+}
+
+.form .input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.forgot-password a:hover {
+    transform: scale(1.03);
+    box-shadow: none;
+    color: rgb(21, 21, 21);
+}
+
+.form .signup-button {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #8847d7 0%, #7d39b9 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: #e6d9ff 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form .signup-button:hover {
+    transform: scale(1.03);
+    box-shadow: none;
+}
+
+.form .signup-button:active {
+    transform: scale(0.95);
+    box-shadow: #e6d9ff 0px 15px 10px -10px;
+}
+
+
+.register-link {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+.register-link a {
+    font-size: 15px;
+    color: #8847d7;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    transform: scale(1.03);
+    color: rgb(21, 21, 21);
+}
+
